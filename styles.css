@@ -162,7 +162,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 #contact h1, #contact p {
@@ -205,3 +204,34 @@ img {
     transform: translateY(0);
   }
 }
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 120%;
+  }
+  
+  #navbar ul {
+   justify-content: flex-end;
+ }
+ .project {
+   grid-column: unset;
+ }
+
+}
+
+@media only screen and (min-width: 1000px) {
+ 
+ #navbar {
+   font-size: 120%;
+ }
+
+ h1 {
+   font-size: 400%;
+ }
+ h2 {
+   font-size: 230%
+ }
+ #welcome-section p {
+   font-size: 160%;
+ }
+} 
