@@ -96,6 +96,67 @@ p {
   font-size: 1.5rem;
 }
 
+#projects {
+  background-color: var(--main-color-1);
+  width: 100%;
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+h2 {
+  padding: 1em 1em 0.3em 1em;
+  margin-bottom: 1em;
+  font-size: 2em;
+  border-bottom: 0.3rem solid white;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  grid-gap: 6em;
+  font-size: 15px;
+}
+
+.project {
+  grid-column: 1 / -1;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.project a {
+  background-color: var(--secondary-color);
+  text-align: center;
+  
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.project-tile {
+  background-color: inherit;
+  padding: 2em;
+  width: 100%;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.project span {
+  color: var(--secondary-color);
+  transition: color 0.15s;
+  margin: 0.3em;
+}
+
+.project a:hover span {
+  color: var(--accent-color);
+}
+
+
 @keyframes fadein {
   0% {
     opacity: 0;
